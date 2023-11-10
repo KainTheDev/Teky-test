@@ -1,0 +1,21 @@
+body {
+    background-color: #424549;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: snow;
+    background-color: #7289da;
+    width: calc(var(--variable-width));
+    font-size: 60px;
+    border-radius: 3px;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: snow;
+    background-color: #282b30;
+    width: fit-content;
+    font-size: 30px;
+    border-radius: 3px;
+}
