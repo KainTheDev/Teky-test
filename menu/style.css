@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap');
+
+body {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 500%;
+}
+
+h2 {
+    font-size: 300%;
+}
+
+#Drinks_menu {
+    height: auto;
+    width: auto;
+}
