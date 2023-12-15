@@ -11,9 +11,14 @@ h1 {
 
 h2 {
     font-size: 300%;
+    border: 50px;
 }
 
 #Drinks_menu {
     height: auto;
     width: auto;
+}
+
+img {
+    margin-left: 10%;
 }

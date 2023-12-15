@@ -13,7 +13,7 @@ const list = [
     {
         drink_name: 'Pepsi',
         price: '8k',
-        image: 'https://www.pepsicobeveragefacts.com/Home/ImageDownload?id=bbf0c363-d202-4ed4-a80b-468f54f27443'
+        image: 'https://satrafoods.com.vn/uploads/san-pham-cung-loai/8934588012228.jpg'
     },
     {
         drink_name: 'Red Bull',
