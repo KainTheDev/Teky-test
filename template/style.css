@@ -2,8 +2,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 2000px;
     user-select: none;
+    background-color: black;
 }
 
 .navigation-bar {
@@ -15,23 +15,39 @@ body {
     left: 0%;
     right: 0%;
     padding: 0px 10px;
+    background-image: linear-gradient(white -180%, black, white 280%);
+}
+
+.navigation-bar:hover {
+    background-image: linear-gradient(white -180%, rgba(21, 21, 21, 0.04), white 280%);
 }
 
 .content {
+    color: white;
+    padding: 0px 202px;
     padding-top: 100px;
 }
+
 .navigation-bar header {
+    font-weight: 1000;
+    letter-spacing: 2px;
     transform: translateY(150%);
-    text-shadow: 0px 0px 3px rgb(236, 236, 236);
+    text-shadow: 0px 0px 10px white;
     float: left;
     color: white;
+    padding: 0px 10px;
+    background-color: transparent;
+}
+
+.navigation-bar header:hover {
+    text-shadow: 0 0 15px white;
 }
 
 .navigation-buttons {
     float: right;
 }
-.navigation-buttons button {
-    margin-top: 10px;
+
+button.primary {
     letter-spacing: 2px;
     background-color: rgb(53, 53, 53);
     color: white;
@@ -43,17 +59,30 @@ body {
     border: none;
     box-shadow: 0px 0px rgb(255, 255, 255);
     border-radius: 5px;
-    margin-left: 2px;
-    margin-right: 2px;
     text-shadow: 0px 0px 3px rgb(236, 236, 236);
-    margin-bottom: 10px;
 }
 
-.navigation-buttons button:hover {
+button.primary:hover {
     opacity: 0.95;
 }
-.navigation-buttons button:active {
-    opacity: 0.6;
+
+button.primary:active {
+    opacity: 0.90;
+}
+
+.modal {
+    color: white;
+    background-color: rgb(48, 46, 46);
+    height: 150px;
+    width: 200px;
+    text-align: center;
+    padding-top: 20px;
+}
+.navigation-buttons button {
+    margin-top: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 10px;
 }
 
 /* width */
