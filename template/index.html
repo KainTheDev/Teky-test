@@ -14,13 +14,17 @@
         <div class="navigation-buttons">
             <button onclick="alert('hi')" class="primary">About</button>
             <button onclick="alert('hi')" class="primary">Social</button>
-            <button onclick="alert('hi')" class="primary">Other links</button>
+            <button onclick="alert('hi')" class="primary">Contact</button>
         </div>
     </div>
     <div class="content">
-        <button onclick="showModal(true)" class="primary">click for modal</button>
+        <h1 class="hero-heading">Nguyen Thien Nam.</h1>
+        <button onclick="(async () => {await setModal('productions', 'visible', '50px 50px', (modal) => {
+            setTimeout(() => modal.style.visibility = 'hidden', 2000)
+        })})()" class="primary" style="grid-column: 2;">My productions</button>
+        <div class="modal" id="productions">My productions</div>
     </div>
-    <div class="modal" id="Hello_modal">Hello!</div>
 </body>
+<script src="script.js"></script>
 
 </html>
