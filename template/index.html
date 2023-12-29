@@ -19,10 +19,16 @@
     </div>
     <div class="content">
         <h1 class="hero-heading">Nguyen Thien Nam.</h1>
-        <button onclick="(async () => {await setModal('productions', 'visible', '50px 50px', (modal) => {
-            setTimeout(() => modal.style.visibility = 'hidden', 2000)
-        })})()" class="primary" style="grid-column: 2;">My productions</button>
-        <div class="modal" id="productions">My productions</div>
+        <button onclick="setModal('productions', 'visible', '50px 50px', (modal) => {
+            const closeButton = document.getElementById('close-button')
+            closeButton.addEventListener('mousedown', () => {
+                modal.style.visibility = 'hidden'
+                closeButton.style.visibility = 'hidden'
+            })
+        })" class="primary" style="grid-column: 2;">My productions</button>
+        <div class="modal" id="productions">
+            <button class='close' id='close-button'>❌</button>
+        </div>
     </div>
 </body>
 <script src="script.js"></script>

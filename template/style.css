@@ -72,6 +72,33 @@ button.primary:active {
     opacity: 0.90;
 }
 
+button.close {
+    background-color: darkred;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
+    float: right;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+button.hyperlink {
+    color: rgba(86, 129, 255, 0.999);
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+}
+
+button.hyperlink:hover {
+    color: rgba(75, 112, 222, 0.999);
+}
+
+button.hyperlink:active {
+    text-decoration: underline;
+}
+
 .modal {
     position: fixed;
     top: 50%;
@@ -82,6 +109,9 @@ button.primary:active {
     height: fit-content;
     width: fit-content;
     visibility: hidden;
+    border-radius: 2px;
+    border: 3px solid white;
+    font-size: 30px;
 }
 
 .navigation-buttons button {
